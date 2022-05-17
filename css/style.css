@@ -1,0 +1,101 @@
+:root {
+    --primary-text-color: #212121;
+    --secondary-text-color: #757575;
+    --accent-color: #2196F3;
+    --white-color: #FFFFFF;
+    --footer-contacts-color: rgba(255, 255, 255, 0.6);
+    --background-dark-color: #2F303A;
+    --background-grey-color: #F5F4FA;
+    --background-light-color: #E5E5E5;
+
+}
+
+body {
+    background-color: #FFFFFF;
+    color: var(--primary-text-color);
+}
+
+.list {
+    list-style: none;
+}
+
+.section-title {
+    color: var(--primary-text-color);
+}
+
+
+/* Header */
+
+.logo-link {
+    color: var(--primary-text-color);
+}
+
+.logo-link-text {
+    color: var(--accent-color) ;
+}
+.logo-link:focus {
+    color: tomato;
+}
+
+.site-nav .link {
+    color: var(--primary-text-color);
+}
+
+.site-nav .link:hover,
+.site-nav .link:focus {
+color: var(--accent-color);
+}
+
+.site-nav .link.current {
+    color: var(--accent-color);
+}
+
+.main-contact .link {
+    color: var(--secondary-text-color);
+}
+
+.main-contact .link:hover,
+.main-contact .link:focus {
+    color: var(--accent-color);
+}
+
+/* Hero section */
+
+.hero-title {
+    color: red;
+}
+
+/* Секция "качества команды" */
+.section-list p {
+    color: var(--secondary-text-color);
+}
+
+/* Секция "чем занимаемся" */
+
+/* Секция Наша команда */
+
+.team-list p {
+color: var(--secondary-text-color);
+}
+
+/* Футер */
+
+.footer .logo-link {
+    color: var(--white-color);
+}
+
+.address .link {
+    color: var(--footer-contacts-color);
+}
+
+.address .link[target="_blank"] {
+    color: var(--white-color);
+}
+
+
+
+
+
+
+
+
