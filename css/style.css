@@ -1,101 +1,193 @@
 :root {
-    --primary-text-color: #212121;
-    --secondary-text-color: #757575;
-    --accent-color: #2196F3;
-    --white-color: #FFFFFF;
-    --footer-contacts-color: rgba(255, 255, 255, 0.6);
-    --background-dark-color: #2F303A;
-    --background-grey-color: #F5F4FA;
-    --background-light-color: #E5E5E5;
-
+  --primary-text-color: #212121;
+  --secondary-text-color: #757575;
+  --accent-color: #2196f3;
+  --white-color: #ffffff;
+  --footer-contacts-color: rgba(255, 255, 255, 0.6);
+  --background-dark-color: #2f303a;
+  --background-grey-color: #f5f4fa;
+  --background-light-color: #e5e5e5;
 }
 
 body {
-    background-color: #FFFFFF;
-    color: var(--primary-text-color);
+  font-family: Roboto, sans-serif
+  color: var(--primary-text-color);
+  font-family: Roboto, sans-serif;
+  letter-spacing: 0.03em;
 }
 
 .list {
-    list-style: none;
+  list-style: none;
 }
 
 .section-title {
-    color: var(--primary-text-color);
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
 }
-
 
 /* Header */
 
-.logo-link {
-    color: var(--primary-text-color);
+.logo {
+  color: var(--primary-text-color);
+  font-family: Raleway, sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  text-decoration: none;
 }
 
-.logo-link-text {
-    color: var(--accent-color) ;
-}
-.logo-link:focus {
-    color: tomato;
+.logo-accent {
+  color: var(--accent-color);
 }
 
 .site-nav .link {
-    color: var(--primary-text-color);
+  color: var(--primary-text-color);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  text-decoration: none;
 }
 
 .site-nav .link:hover,
 .site-nav .link:focus {
-color: var(--accent-color);
+  color: var(--accent-color);
 }
 
 .site-nav .link.current {
-    color: var(--accent-color);
+  color: var(--accent-color);
 }
 
 .main-contact .link {
-    color: var(--secondary-text-color);
+  color: var(--secondary-text-color);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  text-decoration: none;
 }
 
 .main-contact .link:hover,
 .main-contact .link:focus {
-    color: var(--accent-color);
+  color: var(--accent-color);
 }
 
 /* Hero section */
 
+.hero {
+  background-color: var(--background-dark-color);
+}
+
 .hero-title {
-    color: red;
+  color: var(--white-color);
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+}
+
+.button {
+  color: var(--white-color);
+  background-color: var(--accent-color);
+
+  cursor: pointer;
 }
 
 /* Секция "качества команды" */
-.section-list p {
-    color: var(--secondary-text-color);
+
+.quality-list .title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+}
+
+.quality-list p {
+  color: var(--secondary-text-color);
+  font-size: 14px;
+  line-height: 1.71;
 }
 
 /* Секция "чем занимаемся" */
 
 /* Секция Наша команда */
 
+.team-list .name {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+}
+
 .team-list p {
-color: var(--secondary-text-color);
+  color: var(--secondary-text-color);
+  font-size: 16px;
+  line-height: 1.19;
 }
 
 /* Футер */
 
-.footer .logo-link {
-    color: var(--white-color);
+.footer {
+  background-color: var(--background-dark-color);
+}
+
+.footer .logo {
+  color: var(--white-color);
 }
 
 .address .link {
-    color: var(--footer-contacts-color);
+  color: var(--footer-contacts-color);
+  text-decoration: none;
 }
 
-.address .link[target="_blank"] {
-    color: var(--white-color);
+.address .link[target='_blank'] {
+  color: var(--white-color);
+}
+
+.address .link:hover,
+.address .link:focus {
+  color: var(--accent-color);
+}
+
+/* Страница Портфолио */
+
+/* Список проектов */
+
+.filter .button {
+  background-color: var(--background-grey-color);
+  font-family: 'Roboto';
+  color: var(--primary-text-color)
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.63;
+
+  cursor: pointer;
+}
+
+.filter .button:hover,
+.filter .button:focus {
+  background-color: var(--accent-color);
+  color: var(--white-color);
 }
 
 
+.projects .title {
+color: var(--primary-text-color);
+font-weight: 700;
+font-size: 18px;
+line-height: 2;
+letter-spacing: 0.06em;
+}
 
+.projects .type {
+color: var(--secondary-text-color);
+font-size: 16px;
+line-height: 1.88;
+}
 
-
-
+.projects .link {
+  text-decoration: none;
+}
 
 
