@@ -10,10 +10,14 @@
 }
 
 body {
-  font-family: Roboto, sans-serif
-  color: var(--primary-text-color);
   font-family: Roboto, sans-serif;
+  color: var(--primary-text-color);
   letter-spacing: 0.03em;
+  font-size: 14px;
+}
+
+button {
+  font-family: inherit;
 }
 
 .list {
@@ -42,35 +46,35 @@ body {
   color: var(--accent-color);
 }
 
-.site-nav .link {
+.site-nav-link {
   color: var(--primary-text-color);
   font-weight: 500;
-  font-size: 14px;
+
   line-height: 1.14;
   letter-spacing: 0.02em;
   text-decoration: none;
 }
 
-.site-nav .link:hover,
-.site-nav .link:focus {
+.site-nav-link:hover,
+.site-nav-link:focus {
   color: var(--accent-color);
 }
 
-.site-nav .link.current {
+.site-nav-link.current {
   color: var(--accent-color);
 }
 
-.main-contact .link {
+.main-contact-link {
   color: var(--secondary-text-color);
   font-weight: 500;
-  font-size: 14px;
+
   line-height: 1.14;
   letter-spacing: 0.02em;
   text-decoration: none;
 }
 
-.main-contact .link:hover,
-.main-contact .link:focus {
+.main-contact-link:hover,
+.main-contact-link:focus {
   color: var(--accent-color);
 }
 
@@ -89,24 +93,29 @@ body {
   letter-spacing: 0.06em;
 }
 
-.button {
+.hero-button {
   color: var(--white-color);
   background-color: var(--accent-color);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  text-align: center;
+  letter-spacing: 0.06em;
 
   cursor: pointer;
 }
 
 /* Секция "качества команды" */
 
-.quality-list .title {
+.quality-list-title {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
 }
 
-.quality-list p {
+.qulity-list-text {
   color: var(--secondary-text-color);
-  font-size: 14px;
+
   line-height: 1.71;
 }
 
@@ -114,13 +123,21 @@ body {
 
 /* Секция Наша команда */
 
-.team-list .name {
+.team-section {
+  background-color: var(--background-grey-color);
+}
+
+.team-list-item {
+  background-color: var(--white-color);
+}
+
+.team-list-name {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
 }
 
-.team-list p {
+.team-list-position {
   color: var(--secondary-text-color);
   font-size: 16px;
   line-height: 1.19;
@@ -136,17 +153,20 @@ body {
   color: var(--white-color);
 }
 
-.address .link {
+.address-link {
   color: var(--footer-contacts-color);
+
+  line-height: 1.72;
   text-decoration: none;
+  font-style: normal;
 }
 
-.address .link[target='_blank'] {
+.address-link[target='_blank'] {
   color: var(--white-color);
 }
 
-.address .link:hover,
-.address .link:focus {
+.address-link:hover,
+.address-link:focus {
   color: var(--accent-color);
 }
 
@@ -156,8 +176,8 @@ body {
 
 .filter .button {
   background-color: var(--background-grey-color);
-  font-family: 'Roboto';
-  color: var(--primary-text-color)
+
+  color: var(--primary-text-color);
   font-weight: 500;
   font-size: 16px;
   line-height: 1.63;
@@ -171,23 +191,25 @@ body {
   color: var(--white-color);
 }
 
-
-.projects .title {
-color: var(--primary-text-color);
-font-weight: 700;
-font-size: 18px;
-line-height: 2;
-letter-spacing: 0.06em;
+.button.current {
+  background-color: var(--accent-color);
+  color: var(--white-color);
 }
 
-.projects .type {
-color: var(--secondary-text-color);
-font-size: 16px;
-line-height: 1.88;
+.projects-title {
+  color: var(--primary-text-color);
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+}
+
+.projects-type {
+  color: var(--secondary-text-color);
+  font-size: 16px;
+  line-height: 1.88;
 }
 
 .projects .link {
   text-decoration: none;
 }
-
-
